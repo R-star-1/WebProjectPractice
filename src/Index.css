@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(29, 23, 23);
+    margin:0px;
+    box-sizing: border-box;
+    font-weight:bold;
+    
+}
+header{
+    display: flex;
+    align-items: Center;
+    justify-content: space-around;
+}
+.netflix_heading{
+    color:Red;
+    /* box-shadow: */
+    text-shadow:  2px 2px 0px  white;
+    font-size: 50px;
+    /* border: 2px solid white; */
+    /* text-align: center; */
+    margin: 10px;
+}
+.unorderList{
+    color:white;
+    display:flex;
+    list-style: none;
+    
+}
+.unorderList a{
+    font-size: 20px;
+    font-weight: bold;
+    padding:20px;
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
+    /* paddisng:10px; */
+}
+.content{
+   color: aliceblue;
+   align-items: center;
+   justify-content: center;
+   padding:10px;
+}
+.content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+/* .wrapper{
+    margin:auto;
+    border: 2px solid white;
+    color:white;
+} */
+.wrapper {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 5px;
+}
+content{
+    width: 60%;
+}
+/* .InsideWrapper{
+    display: flex;
+    width:100%;
+} */
+.Image{
+    /* width: 30%; */
+}
+img{
+    color:white;
+}
+.CardBody{
+    width:18%;
+    height: 20%;
+    border: 2px solid rgb(90, 86, 86);
+    background-color: rgb(88, 116, 38);
+    border-radius: 5px;
+}
+.CardBody:hover{
+    width:19%;
+    height:19%;
+    /* height: 15%; */
+    box-shadow: 5px 5px 10px white;
+}
+.CardBody img{
+    width: 100%;
+    height: 300px;
+}
+button{
+    background-color: blueviolet;
+    color:white;
+    font-weight:bold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.CardBody h1{
+    font-size: 20px;
+    text-align: center;
+}
+.Card_Collections{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+/* THIS IS THE CSS OF THE FOOTER COMPONENT */
+Footer{
+    /* color:white; */
+    background-color: white;
+}
+.Address{
+    color:white;
+}

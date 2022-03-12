@@ -1,18 +1,30 @@
-import React  from "react";
-import Card from './components/Card';
-import Header from "./components/Header";
-const App =() =>{
+import React from 'react';
+import Header from './Header';
+import Content from './Content';
+import Background from './Background';
+import Cards from './Cards';
+import Footer from './Footer';
+import Inventing_Anna from './Images/images (1).jpg';
+import vikings from './Images/vikings.webp';
+import Cocomelon from './Images/Cocomelon.jpg'
+import SweetMagnolias from './Images/SweetMagnolias.jpg';
+const App = () =>{
+    console.warn("this is running");
     return (
         <>
-            <Header />
-            <div className="Card_collections"> 
-                <Card image="https://picsum.photos/200"   heading="RandomImage 1"  />
-                <Card image="https://picsum.photos/seed/picsum/200"   heading="RandomImage 2"  />
-                <Card image="https://picsum.photos/201"   heading="RandomImage 3"  />
-                <Card image="https://placekitten.com/200"   heading="RandomImage 4"  />
-                <Card image="https://placebear.com/200/200"   heading="RandomImage 5"  />
-            </div>
+          
+            <Header/>
+            {/* <Background />
+             <Content/>
+            <div className='Card_Collections'>
+                < Cards name="" imgpath= {Inventing_Anna}/> 
+                < Cards name="SweetMagnolias" imgpath= {SweetMagnolias}/>
+                < Cards name="vikings" imgpath= {vikings}/>
+                < Cards name="Cocomelon" imgpath= {Cocomelon}/>
+               
+            </div>  */}
+            <Footer /> 
         </>
     );
-}
+} 
 export default App;
