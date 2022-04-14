@@ -1,14 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './Index.css';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 import App from './App';
-import Inventing_Anna from './Images/images (1).jpg';
-ReactDOM.render(
-   
-        // < App />,
-        <div>
-        <h1 style={{color: "white"}}> Hello Everyone image is not working very well in a react js projcet</h1>
-        < img src= {Inventing_Anna}/>
-        </ div>,
-    document.getElementById('root')
+import store from './state/store.js'
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals();
